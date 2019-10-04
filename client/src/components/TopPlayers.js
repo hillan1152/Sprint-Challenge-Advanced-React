@@ -25,14 +25,17 @@ export default class TopPlayers extends React.Component {
             })
     }
 
+
+    
+
     render() {
+
         return(
             <div className="top-player-container">
                 <h2>Player</h2>
                 {this.state.players.map(item => {
                   return <Card key={item.id} players={item}/>
                 })}
-                
             </div>
         )
     }
