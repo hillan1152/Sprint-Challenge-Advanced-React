@@ -16,7 +16,7 @@ function App() {
           onClick={toggleMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
       >Click</button>
-      <h1>Women's World Cup Popular Players!</h1>
+      <h1>Womens World Cup Popular Players!</h1>
       <Players/>
     </div>
   );
