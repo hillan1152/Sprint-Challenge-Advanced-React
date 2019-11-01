@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
+import { Card } from './Card';
 
 export default class Players extends React.Component {
     state = {
@@ -25,7 +26,7 @@ export default class Players extends React.Component {
             <div className='main-div'>
                 <h1>Women's World Cup Popular Players!</h1>
                 <div>{this.state.players.map(name => {
-                    return <p key={name.id}>{name.name}</p>
+                    return <Card key={name.id} players={name}/>
                 })}</div>
             </div>
         )
